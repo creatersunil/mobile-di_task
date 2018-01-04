@@ -1,0 +1,31 @@
+<!-- <div class="app-content">
+  <div class="group">
+
+    <form role="form" (submit)="login()"><br>
+      Username:<input  type="text" required [(ngModel)]="user.username" id="username" name="username" >
+      Password:<input type="password" required [(ngModel)]="user.password" id="password" name="password" >
+      <button  type="submit" name="action">LOGIN</button><br><br>
+      <span id="err"><small>{{errorMsg}}</small></span>
+      <small>Remember me!</small>
+    </form >
+  </div>
+</div> -->
+<div class="login-page">
+  <div class="form">
+    <!-- <form class="register-form" role="form" (submit)="login()">
+      <input type="text" required [(ngModel)]="user.username" id="username" name="username" placeholder="name"/>
+      <input type="password" required [(ngModel)]="user.password" id="password" name="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form> -->
+    <form class="login-form" role="form" (submit)="login()">
+      <input type="text" required [(ngModel)]="user.username" id="username" name="username" placeholder="username"/>
+      <input type="password" required [(ngModel)]="user.password" id="password" name="password" placeholder="password"/>
+      <button type="submit" name="action">login</button>
+      <p class="message">{{errorMsg}} <a href="#">Remember me!</a></p>
+    </form>
+  </div>
+</div>
+
+

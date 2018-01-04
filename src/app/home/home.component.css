@@ -1,0 +1,76 @@
+
+.app-content{
+  margin: 100px;
+  padding: 50px;
+
+}
+
+form {
+  width: auto;
+  height: auto;
+  margin: auto;
+  /*padding: 3em 2em 2em 2em;*/
+  background: #4CAF50;
+  border: 1px solid #4CAF50;
+  box-shadow: #00000026 0px 1px 1px 0px,#00000019 0px 1px 2px 0px;
+  border-radius: 14%;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
+
+}
+
+.sebm-google-map-container {
+  height: 400px;
+}
+
+.agm-map {
+  height: 300px;
+}
+.floating-box {
+  float: left;
+}
+
+input[type=text] {
+width: 130px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+background-color: #4CAF50;
+background-position: 10px 10px; 
+background-repeat: no-repeat;
+padding: 8px 0px 0px 15px;
+-webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+font-family: Cambria, Georgia;
+color: #f3f0f0
+}
+
+input[type=text]:focus {
+width: 80%;
+}
+
+li {
+height: 16px;
+width: 157px;
+padding: 5px 0px 0px 6px;
+font-family: Cambria, Georgia;
+font-weight: lighter;
+color: #0f0e0e
+}
+
+.button{
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 6px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 7px 1208px;
+  cursor: pointer;
+}

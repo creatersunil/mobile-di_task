@@ -1,0 +1,56 @@
+<div class="page-header">
+  <h1>Bengaluru Restaurants Map In Google </h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+          <!-- <input [(ngModel)] ="searchText" placeholder="search text goes here">
+          <ul>
+            <li *ngFor="let c of allMarkers | filter : searchText">
+              {{c.name}}
+            </li>
+          </ul> -->
+<button class="button" (click)="logout()">Logout</button>
+          <div class="floating-box">
+              <input type="text" [(ngModel)]="queryString" id="search" placeholder="Search the Restaurant here">
+            
+              <ul>
+                <li *ngFor="let n of searchData | FilterPipe: queryString">
+                  {{n}}
+                </li>
+              </ul>
+            </div>
+      <div class="map">
+          <!-- <div class="form-group">
+              <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
+            </div> -->
+        <agm-map (mapClick)="onMapClicked($event)" [latitude]="lat" [longitude]="lng" [scrollwheel]="ture" [zoom]="zoom">
+          <agm-marker *ngFor="let m of allMarkers" (markerClick)="onClick(m)" [latitude]="m.lat" [longitude]="m.lng" >
+              <agm-info-window>
+                <strong>{{m.name}}</strong>
+                <br>
+                <a class="delete" (click)="onDelete(m)">Delete</a>
+              </agm-info-window>
+          </agm-marker>
+        </agm-map>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div >
+      <span>
+        <button class="button" (click)="logout()">Logout</button>
+      </span><br><br>
+           <div *ngFor="let sd of data">
+            <ul>
+              <i >
+            
+                  {{sd.from.name}}
+                <small>Message :</small> <p>{{sd.message}}</p>
+              </i>
+            </ul>
+          </div>
+</div> -->

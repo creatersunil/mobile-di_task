@@ -2,7 +2,7 @@
 
 
 1. Get the Code
-git clone https://bitbucket.org/sunilsoftware2016/mobile-di_task.git
+git clone https://github.com/sunilsoftware2016/mobile-di_task.git
 cd mobile_id_task
 npm install -g @angular/cli@latest
 npm install
